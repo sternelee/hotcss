@@ -91,6 +91,16 @@ $designWidth : 750; //如设计图是750
 ```
 `$designWidth`必须要在使用`px2rem`前定义。否则scss编译会出错。
 
+在`stylus`中使用时，如下
+```styl
+@import "px2rem.styl";
+designWidth = 750;
+```
+使用`stylus`编译工具
+```
+npm install -g stylus
+stylus -w style.styl -o style.css
+```
 
 注意：如果使用less，则需要引入`less-plugin-functions`，普通的less编译工具无法正常编译。
 
